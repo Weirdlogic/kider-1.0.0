@@ -501,3 +501,41 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+
+/*** Gallery ***/
+.gallery-filter .btn {
+    margin: 5px;
+}
+
+.gallery-item {
+    display: block;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+#galleryModal .modal-content {
+    background: transparent;
+    border: none;
+}
+
+#galleryModal .modal-body {
+    padding: 0;
+}
+
+#galleryModal img {
+    width: 100%;
+    border-radius: .5rem;
+}

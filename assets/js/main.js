@@ -103,5 +103,37 @@
         });
     });
 
+
+    // Gallery filter
+    var galleryFilterButtons = document.querySelectorAll('.gallery-filter [data-filter]');
+    var galleryItems = document.querySelectorAll('.gallery-item');
+    galleryFilterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            galleryFilterButtons.forEach(function (b) {
+                b.classList.remove('btn-primary');
+                b.classList.add('btn-outline-primary');
+            });
+            btn.classList.remove('btn-outline-primary');
+            btn.classList.add('btn-primary');
+            var filter = btn.getAttribute('data-filter');
+            galleryItems.forEach(function (item) {
+                var show = filter === 'all' || item.getAttribute('data-category') === filter;
+                item.closest('.gallery-col').classList.toggle('d-none', !show);
+            });
+        });
+    });
+
+    // Gallery lightbox
+    var galleryModal = document.getElementById('galleryModal');
+    if (galleryModal) {
+        galleryModal.addEventListener('show.bs.modal', function (event) {
+            var trigger = event.relatedTarget;
+            var img = trigger.querySelector('img');
+            var modalImg = galleryModal.querySelector('.modal-body img');
+            modalImg.src = img.getAttribute('src');
+            modalImg.alt = img.getAttribute('alt');
+        });
+    }
+
 })(jQuery);
 
