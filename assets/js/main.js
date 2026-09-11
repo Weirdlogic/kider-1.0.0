@@ -76,6 +76,32 @@
             }
         }
     });
-    
+
+
+    // Mailto forms (static site, no backend: opens the visitor's email
+    // client pre-filled instead of actually submitting anywhere)
+    document.querySelectorAll('form[data-mailto]').forEach(function (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var to = form.getAttribute('data-mailto');
+            var defaultSubject = form.getAttribute('data-subject') || 'New message from The Leabridge School website';
+            var subject = defaultSubject;
+            var lines = [];
+            form.querySelectorAll('input, textarea').forEach(function (field) {
+                if (!field.id) return;
+                var labelEl = form.querySelector('label[for="' + field.id + '"]');
+                var label = labelEl ? labelEl.textContent.trim() : (field.placeholder || field.id);
+                var value = field.value.trim();
+                if (field.id === 'subject' && value) {
+                    subject = value;
+                    return;
+                }
+                lines.push(label + ': ' + (value || '(not provided)'));
+            });
+            var mailto = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+            window.location.href = mailto;
+        });
+    });
+
 })(jQuery);
 
