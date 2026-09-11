@@ -33,6 +33,11 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://theleabridge.com/">
 
+    <meta name="geo.region" content="NG-LA">
+    <meta name="geo.placename" content="Ikeja, Lagos">
+    <meta name="geo.position" content="6.6126244;3.3437357">
+    <meta name="ICBM" content="6.6126244, 3.3437357">
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="The Leabridge School">
@@ -71,6 +76,17 @@
         "postalCode": "101233",
         "addressCountry": "NG"
     },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.6126244,
+        "longitude": 3.3437357
+    },
+    "hasMap": "https://www.google.com/maps?q=2B+Akinola+Cole+Cres,+off+Adeniyi+Jones,+Oba+Akran,+Ikeja+101233,+Lagos,+Nigeria",
+    "areaServed": [
+        "Ikeja",
+        "Lagos",
+        "Nigeria"
+    ],
     "sameAs": [
         "https://facebook.com/leabridge",
         "https://instagram.com/TheLeabridge",
@@ -79,6 +95,80 @@
 }
     </script>
 
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What ages does The Leabridge School accept?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We take children from just 3 months old in our creche, right through toddler class, play school and into primary education."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What curriculum does Leabridge follow?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A blend of British, Montessori and Nigerian curricula, tailored to each stage from creche through primary."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the teacher-to-child ratio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "About 1 teacher for every 5 children in our early years classes, so every child gets attention."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do parents get updates on their child's day?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A report on your child's activities, meals and mood is sent home every single day."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What classes or programmes do you offer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Creche, Toddler Class, Play School and Primary Education."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where is The Leabridge School located?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2B Akinola Cole Cres, off Adeniyi Jones, Oba Akran, Ikeja 101233, Lagos, Nigeria."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Has The Leabridge School been recognised for its work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes - we were named one of the top 20 primary schools in Lagos in an independent poll."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I book a visit or enrol my child?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Book a visit online, call or WhatsApp us on +234 818 132 0000, or email theleabridge@gmail.com."
+            }
+        }
+    ]
+}
+    </script>
 </head>
 
 <body>
@@ -584,6 +674,88 @@
         <!-- Testimonial End -->
 
 
+        <!-- FAQ Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Frequently Asked Questions</h1>
+                    <p>Common questions from parents about creche, pre-school and primary at The Leabridge School.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What ages does The Leabridge School accept?</button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We take children from just 3 months old in our creche, right through toddler class, play school and into primary education.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What curriculum does Leabridge follow?</button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">A blend of British, Montessori and Nigerian curricula, tailored to each stage from creche through primary.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What is the teacher-to-child ratio?</button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">About 1 teacher for every 5 children in our early years classes, so every child gets attention.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do parents get updates on their child's day?</button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes. A report on your child's activities, meals and mood is sent home every single day.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">What classes or programmes do you offer?</button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Creche, Toddler Class, Play School and Primary Education - see our <a href="/classes/">Classes page</a> for details on each stage.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Where is The Leabridge School located?</button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">2B Akinola Cole Cres, off Adeniyi Jones, Oba Akran, Ikeja 101233, Lagos, Nigeria - see our <a href="/contact/">Contact page</a> for a map.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">Has The Leabridge School been recognised for its work?</button>
+                                </h2>
+                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes - we were named one of the top 20 primary schools in Lagos in an independent poll.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">How do I book a visit or enrol my child?</button>
+                                </h2>
+                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body"><a href="/appointment/">Book a visit online</a>, call or WhatsApp us on +234 818 132 0000, or email <a href="mailto:theleabridge@gmail.com">theleabridge@gmail.com</a>.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ End -->
+
+
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -659,6 +831,10 @@
             </div>
         </div>
         <!-- Footer End -->
+
+
+        <!-- WhatsApp Chat -->
+        <a href="https://wa.me/2348181320000?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20enrolment%20at%20The%20Leabridge%20School." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 
         <!-- Back to Top -->
